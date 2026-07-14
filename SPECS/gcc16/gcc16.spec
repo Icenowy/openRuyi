@@ -550,7 +550,7 @@ Runtime library for the GNU Modula-2 language.
 %setup -q -n gcc-%{version}
 
 #test patching start
-%patch -p1 -P 2000 -P 2001
+%autopatch -p1 -m 1000
 #test patching end
 
 %build
